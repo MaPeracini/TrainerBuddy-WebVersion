@@ -1,3 +1,45 @@
+#icone{
+    padding: 0px;
+     }
+ 
+     .myItens {
+        margin-left: 0.5%;
+       text-decoration: none;
+        height: 50px;
+        width: 150px;
+        margin-top: 30px;
+        /*background-color: rgba(244,191,58);*/
+          padding: 5px;
+          color:rgba(244,191,58) ;
+       border: solid 4px rgba(244,191,58);
+        border-radius: 50px;
+      
+      }
+  
+      #itensEnd{
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 50px;
+          padding-right: 5%;
+      }
+  
+      #itensA{
+            background-color: rgba(244,191,58) ;
+           padding: 10px;
+           border: none;
+          a{
+        text-decoration: none;
+          color: rgba(65,55,108);
+              }
+      }
+  
+      #itensB{
+          a{
+          color: rgba(244,191,58);
+           text-decoration: none;
+      }}
+  
+     
  /*Home*/
  
  .backH {
@@ -27,50 +69,11 @@
       width: 100%;
       margin-top: 0px;
       z-index: 1;
-      gap: 5px;
+      gap: 0px;
       text-align: center;
     }
 
-    .itensH {
-      margin-left: 0.5%;
-     text-decoration: none;
-      height: 50px;
-      width: 150px;
-      margin-top: 30px;
-      /*background-color: rgba(244,191,58);*/
-        padding: 5px;
-        color:rgba(244,191,58) ;
-     border: solid 4px rgba(244,191,58);
-      border-radius: 50px;
     
-    }
-
-    #itensEndH{
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 50px;
-        padding-right: 5%;
-    }
-
-    #itensAH{
-          background-color: rgba(244,191,58) ;
-         padding: 10px;
-         border: none;
-        a{
-      text-decoration: none;
-        color: rgba(65,55,108);
-            }
-    }
-
-    #itensBH{
-        a{
-        color: rgba(244,191,58);
-         text-decoration: none;
-    }}
-
-    #iconeH{
-   padding: 0px;
-    }
 
     /*Login*/
     .backL {
@@ -120,6 +123,20 @@
         font-family: Poppins;
         color:black;
     }
+
+    #menuE {
+        font-size: 20px;
+        /* padding-bottom: 10px;*/
+        display: flex;
+        font-weight: bold;
+        justify-content: space-around;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        margin-top: 0px;
+        z-index: 1;
+        gap: 5px;
+        text-align: center;}
 
     /*Treinos*/
     .backT {
