@@ -49,10 +49,11 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 50px;
+        padding-right: 5%;
     }
 
     #itensAH{
-          background-color: rgba(244,191,58,60%) ;
+          background-color: rgba(244,191,58) ;
          padding: 10px;
          border: none;
         a{
@@ -67,7 +68,7 @@
          text-decoration: none;
     }}
 
-    #icone{
+    #iconeH{
    padding: 0px;
     }
 
