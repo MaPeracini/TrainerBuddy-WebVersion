@@ -71,6 +71,7 @@
       z-index: 1;
       gap: 5px;
       text-align: center;
+     
     }
 
     
@@ -84,11 +85,34 @@
         height: 100vh;
         width: 100vw;
         position: -1;
+        position: fixed;
     }
 
     #bodyL {
         margin: 0;
         font-family: Poppins;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #containerL{
+       justify-content: center;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 10%;
+       size: 100%;
+        
+    }
+
+    #containerFormL{
+        background-color: blueviolet;
+    }
+
+    #bdImg{
+      height: 90vh;  
+      
+        
     }
 
     /*cadastro*/
@@ -109,7 +133,7 @@
 
     /*Exercícios*/
     .backE {
-        background-image: linear-gradient(to bottom, rgb(48,40,87),rgb(176,138,42));
+        background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -140,7 +164,7 @@
 
     /*Treinos*/
     .backT {
-        background-image: linear-gradient(to bottom, rgb(48,40,87),rgb(176,138,42));
+        background-image: linear-gradient(to bottom, rgb(48,40,87)45%,rgb(176,138,42));
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
