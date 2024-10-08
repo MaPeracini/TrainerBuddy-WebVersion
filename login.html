@@ -15,20 +15,24 @@
 <body id="bodyL">
 
 	<div class="backL">
-        <div class="row" id="containerL">
+        <div class="row" id="containerL" >
         <div class="container col" id="containerFormL" >
-            <form>
+          <img src="ico.png" width="25%" align="center">
+            <form  id="formL">
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="emailL" class="form-label">Nome de usuário ou e-mail:</label>
+                <input type="email" class="form-control" id="emailL" placeholder="nome@gmail.com" id="campoL">
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="passL" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="passL">
+                <br><br>
+                <input class="btn" type="button" value="Entrar" align="center" id="btnEntrarL">
               </div>
               </form>
+              <p>Ou cadastre se <a href="cadastro.html">aqui</a></p>
         </div>
-        <div class="col"><img src="buddy.png" id="bdImg"></div>
+        <div class="col" id="divBdL"><img src="buddy.png" id="bdImg"></div>
 </div>
  </div>  
 </body>
