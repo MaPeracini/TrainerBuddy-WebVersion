@@ -15,25 +15,35 @@
 <body id="bodyL">
 
 	<div class="backL">
-        <div class="row" id="containerL" >
-        <div class="container col" id="containerFormL" >
-          <img src="ico.png" width="25%" align="center">
-            <form  id="formL">
-            <div class="mb-3">
-                <label for="emailL" class="form-label">Nome de usuário ou e-mail:</label>
-                <input type="email" class="form-control" id="emailL" placeholder="nome@gmail.com" id="campoL">
-              </div>
-              <div class="mb-3">
-                <label for="passL" class="form-label">Senha:</label>
-                <input type="password" class="form-control" id="passL">
-                <br><br>
-                <input class="btn" type="button" value="Entrar" align="center" id="btnEntrarL">
-              </div>
-              </form>
-              <p>Ou cadastre se <a href="cadastro.html">aqui</a></p>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="login-box row">
+            <div class="col-md-6 p-5" id="containerFormL" >
+                <div class="text-center">
+                  <img src="ico.png" width="20%">
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Nome de usuário ou e-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail:">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Senha:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Insira sua senha:">
+                    </div>
+                    <div class="text-center">
+                    <button type="submit">Entrar</button>
+                </div>
+                </form>
+                <div class="text-center mt-3">
+                 <p>Ou cadastre se <a href="cadastro.html">aqui</a></p>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center ">
+                <img src="buddy.png"  width="50%" class="img-fluid">
+            </div>
         </div>
-        <div class="col" id="divBdL"><img src="buddy.png" id="bdImg"></div>
+    </div>
 </div>
- </div>  
+
 </body>
 </html>
