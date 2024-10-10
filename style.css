@@ -127,7 +127,7 @@
         font-weight: bold;
     }
 
-    #emailL, #passwordL{
+    #userL, #passwordL{
         background-color: #44377d;
         border-color: #44377d;
         color: #f4bf3a;
