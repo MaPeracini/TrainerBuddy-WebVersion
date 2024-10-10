@@ -78,7 +78,7 @@
 
     /*Login*/
     .backL {
-        background-image: linear-gradient(to bottom, rgb(48,40,87),rgb(176,138,42));
+        background-image: linear-gradient(to bottom, rgb(48,40,87)55%,rgb(176,138,42));
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -95,13 +95,14 @@
         height: 100vh;
     }
 
-    #containerL{
-       
-        
-    }
-
+   
     #containerFormL{
-        background:#dfa921;
+        background:rgba(244,191,58,50%);
+        
+        width: 40%; 
+        height: 40%;
+         margin: 4%;
+    
     border-radius: 8px;
     color: #fff;
         color: white;
@@ -110,21 +111,27 @@
        }
     }
 
-
-    #bdImg{
-     
-      
-      /*padding-left: 5%;*/
-        
-    }
-
     #divBdL{
-       /* padding-left: 50% ;*/
+        padding-right: 50% ;
     }
 
     #btnEntrarL{
-        background-color: rgba(68, 55, 125);
-        border-radius: 35%;
+        background-color: #44377d;
+        border-radius: 40%;
+        border: none;
+        padding: 2%;
+        padding-left:5% ;
+        padding-right:5% ;
+        font-size: 20px;
+        color: #f4bf3a;
+        font-weight: bold;
+    }
+
+    #emailL, #passwordL{
+        background-color: #44377d;
+        border-color: #44377d;
+        color: #f4bf3a;
+       
     }
 
 
