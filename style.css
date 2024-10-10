@@ -134,6 +134,8 @@
 
 
     /*cadastro*/
+   
+
     .backC {
         background-image: linear-gradient(to bottom, rgb(48,40,87)55%,rgb(176,138,42));
         background-repeat: no-repeat;
@@ -155,6 +157,7 @@
         width: 40%; 
        
          margin: 4%;
+         padding-bottom: 20px;
     
     border-radius: 8px;
     color: #fff;
