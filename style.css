@@ -170,6 +170,11 @@
     #bodyC {
         margin: 0;
         font-family: Poppins;
+        color:black;
+        background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
     }
 
     #containerFormC{
