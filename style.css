@@ -240,7 +240,7 @@
         font-weight: bold;
         justify-content: space-around;
         flex-direction: row;
-        position: fixed;
+       /* position: fixed;*/
         width: 100%;
         margin-top: 0px;
         z-index: 1;
@@ -248,8 +248,8 @@
         text-align: center;}
 
         #titleE{
-          padding: 10%;
-          font-weight: bold;
+          padding: 2%;
+      
           color: #f4bf3a;  
         }
         .myContainerE{
