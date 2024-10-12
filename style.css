@@ -215,19 +215,17 @@
 
     /*Exercícios*/
     .backE {
-        background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        width: 100vw;
-        position: -1;
+      
     }
 
     #bodyE {
         margin: 0;
         font-family: Poppins;
         color:black;
+        background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
     }
 
     #menuE {
@@ -243,6 +241,16 @@
         z-index: 1;
         gap: 5px;
         text-align: center;}
+
+        #titleE{
+          padding: 10%;
+          font-weight: bold;
+          color: #f4bf3a;  
+        }
+        .myContainerE{
+            background-color: #44377d;
+          padding: 20px;
+        }
 
     /*Treinos*/
     .backT {
