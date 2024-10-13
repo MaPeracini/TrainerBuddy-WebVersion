@@ -62,7 +62,7 @@
 
       @media(min-width:0px) and (max-width:576px){
       #myCE{
-          margin-left: 20%;
+         /* margin-left: 20%;*/
          
       }
     }
@@ -286,7 +286,9 @@
 
     .myContainerT{
         background-color: #44377d;
-          padding: 20px;
+        
+          margin: 5%;
+
     }
 
     #titleT{
@@ -309,3 +311,12 @@
         gap: 5px;
         text-align: center;
     }
+
+    #contFiltrosT{
+        background-color:#312854 ;
+        color: #f4bf3a;
+        height: 100vh;
+        margin-top: 5%;
+    }
+
+
