@@ -59,6 +59,13 @@
         }
         
       }
+
+      @media(min-width:0px) and (max-width:576px){
+      #myCE{
+          margin-left: 20%;
+         
+      }
+    }
   
      
  /*Home*/
@@ -226,7 +233,7 @@
     #bodyE {
         margin: 0;
         font-family: Poppins;
-        color:black;
+        color:#dfa921;
         background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
         background-repeat: no-repeat;
        background-size: cover;
@@ -257,6 +264,7 @@
           padding: 20px;
         }
 
+       
     /*Treinos*/
     .backT {
         background-image: linear-gradient(to bottom, rgb(48,40,87)45%,rgb(176,138,42));
