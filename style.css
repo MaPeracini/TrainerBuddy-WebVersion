@@ -267,18 +267,45 @@
        
     /*Treinos*/
     .backT {
-        background-image: linear-gradient(to bottom, rgb(48,40,87)45%,rgb(176,138,42));
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        width: 100vw;
-        position: -1;
+       
     }
 
     #bodyT {
         margin: 0;
         font-family: Poppins;
-        color:black;
+        color:#dfa921;
+        background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
     }
 
+    #myCT{
+
+    }
+
+    .myContainerT{
+        background-color: #44377d;
+          padding: 20px;
+    }
+
+    #titleT{
+        padding: 2%;
+      
+        color: #f4bf3a;
+    }
+
+    #menuT{
+        font-size: 20px;
+        /* padding-bottom: 10px;*/
+        display: flex;
+        font-weight: bold;
+        justify-content: space-around;
+        flex-direction: row;
+        /*position: fixed;*/
+        width: 100%;
+        margin-top: 0px;
+        z-index: 1;
+        gap: 5px;
+        text-align: center;
+    }
