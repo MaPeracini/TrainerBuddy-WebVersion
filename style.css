@@ -312,11 +312,20 @@
         text-align: center;
     }
 
-    #contFiltrosT{
+    .contFiltrosT{
         background-color:#312854 ;
         color: #f4bf3a;
-        height: 100vh;
-        margin-top: 5%;
+       
+       padding: 8%;
+       button{
+        background-color:#312854 ;
+        color: #f4bf3a;
+       }
+       
+    }
+
+    .contFiltrosT{
+        color:#f4bf3a; 
     }
 
 
