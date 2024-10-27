@@ -1,6 +1,18 @@
 #icone{
     padding: 0px;
      }
+
+     @media (max-width: 799px)  {
+        #menuT, #menuE, #menuH{
+            display: none;
+        }
+     }
+
+@media (min-width: 800px)  {
+     #menuTsm, #menuEsm, #menuHsm{
+           display: none;
+           }  }   
+
  
      .myItens {
         margin-left: 0.5%;
@@ -67,45 +79,29 @@
       }
     }
 
-    @media (max-width: 799px)  {
-        #menuT, #menuE, #menuH{
-            display: none;
-        }
-     }
-  
-  @media (min-width: 800px)  {
-     #menuTsm, #menuEsm, #menuHsm{
-           display: none;
-           } 
    
-          
-          }
+
+        .offcanvas{
+            background-color: #44377d;
+        }
   
      
  /*Home*/
  
- .backH {/*
+ .backH {
             background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             height: 100vh;
             width: 100vw;
-            position: -1;*/
+            position: -1;
         }
 
         #bodyH {
-          /*  margin: 0;
-            font-family: Poppins;
-            color: black;*/
-
             margin: 0;
             font-family: Poppins;
-            color:#dfa921;
-            background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
-            background-repeat: no-repeat;
-           background-size: cover;
-           background-attachment: fixed;
+            color: black;
         }
 
      #menuH {
