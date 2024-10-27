@@ -324,8 +324,41 @@
        
     }
 
-    .colorFiltrosT{
-        color:#f4bf3a; 
-    }
+ /* Estilo da borda do accordion */
+.accordion-item{
+    border-color: #f4bf3a; }
+
+
+.accordion-button{
+     color: #f4bf3a;
+}
+
+
+.accordion-button:focus {
+    box-shadow: none ;
+}
+
+
+/* Estilo da setinha do accordion */
+.accordion-button::after {
+    color: #f4bf3a; /* Altere para a cor desejada */
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: #f4bf3a; 
+    color:#312854;
+}
+
+.form-check-input:checked {
+    background-color: #f4bf3a; /* Cor de fundo quando selecionado */
+    border-color: transparent;
+  
+}
+
+.form-check-input:focus {
+    outline: none; /* Remove o outline padrão */
+    box-shadow: 0 0 2px 3px #f4bf3a; /* Efeito de foco na cor desejada */
+}
 
 
