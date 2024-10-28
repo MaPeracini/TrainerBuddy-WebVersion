@@ -2,16 +2,6 @@
     padding: 0px;
      }
 
-     @media (max-width: 799px)  {
-        #menuT, #menuE, #menuH{
-            display: none;
-        }
-     }
-
-@media (min-width: 800px)  {
-     #menuTsm, #menuEsm, #menuHsm{
-           display: none;
-           }  }   
 
  
      .myItens {
@@ -71,6 +61,18 @@
         }
         
       }
+
+      @media (max-width:799px) {
+        #menuT, #menuE, #menuH{
+            display: none !important;
+        }
+        
+    }
+    
+    @media (min-width: 800px)  {
+         #menuTsm, #menuHsm, #menuEsm{
+               display: none !important;
+               }  }  
 
       @media(min-width:0px) and (max-width:576px){
       #myCE{
