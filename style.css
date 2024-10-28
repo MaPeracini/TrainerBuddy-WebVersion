@@ -332,6 +332,25 @@
         text-align: center;
     }
 
+    .btnSalvarT{
+        background-color: #44377d;
+        border-color: #f4bf3a;
+        padding: 2%;
+        margin-top: 5%;
+        padding-left:10% ;
+        padding-right:10% ;
+        font-size: 20px;
+        color: #f4bf3a;
+        font-weight: bold;
+       
+      
+    }
+
+    .btnSalvarT:hover{
+         background-color: #f4bf3a;
+        color: #44377d;
+    }
+
     .contFiltrosT{
         background-color:#312854 ;
         color: #f4bf3a;
