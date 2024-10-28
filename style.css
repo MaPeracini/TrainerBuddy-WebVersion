@@ -334,7 +334,8 @@
 
     .btnSalvarT{
         background-color: #44377d;
-        border-color: #f4bf3a;
+       
+        border: 2px #f4bf3a solid;
         padding: 2%;
         margin-top: 5%;
         padding-left:10% ;
@@ -342,6 +343,7 @@
         font-size: 20px;
         color: #f4bf3a;
         font-weight: bold;
+        
        
       
     }
