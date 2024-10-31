@@ -258,6 +258,7 @@
         margin: 0;
         font-family: Poppins;
         color:#dfa921;
+       
         background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
         background-repeat: no-repeat;
        background-size: cover;
@@ -286,6 +287,11 @@
         .myContainerE{
             background-color: #44377d;
           padding: 20px;
+          a{
+            font-family: Poppins;
+            color:#dfa921;
+            text-decoration: none;
+        }
         }
 
        
@@ -412,6 +418,42 @@
     border-color: #f4bf3a; 
     
 }
+
+/*pgExercicio*/
+
+#dificuldadeE{
+         
+    color: #44377d;
+    margin-top: 5%;
+
+    
+  }
+
+  #contDifE{
+    background-color: #f4bf3a;
+  width: 20%; /* Diminua a largura */
+  padding-left: 2%;
+  padding-right: 2%; /* Reduza o padding */
+  
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+  }
+
+  #descricao{
+    color: white;
+    margin-right: 10%;
+  }
+
+  @media (max-width: 500px){
+    #contDifE{
+      padding-left: 4%;
+  padding-right: 4%;
+     width: 30%; 
+     margin-left: 2%;
+    }
+  }
 
 
 
