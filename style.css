@@ -318,6 +318,11 @@
         background-color: #44377d;
         
           margin: 5%;
+          a{
+            font-family: Poppins;
+            color:#dfa921;
+            text-decoration: none;
+        }
 
     }
 
@@ -454,6 +459,74 @@
      margin-left: 2%;
     }
   }
+
+  /* pgTreino */
+
+  .scroll-containerPE {
+    width: 100%;
+    overflow-x: auto; 
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #44377d;
+    white-space: nowrap; 
+      padding-bottom: 20px; 
+}
+
+.scroll-item {
+    width: 200px; 
+    color: white;
+    padding: 1%;
+    border-radius: 8px;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+
+.myContainerPE{
+    background-color: #312854;
+          padding: 20px;
+          color: #f4bf3a;
+          a{
+            font-family: Poppins;
+            color:#dfa921;
+            text-decoration: none;
+        }
+
+
+}
+
+/* Estilo da barra de rolagem */
+.scroll-containerPE::-webkit-scrollbar {
+    height: 8px; /* Define a altura da barra de rolagem horizontal */
+    background-color: #312854; /* Cor de fundo da barra */
+     /* border-radius: 10px; */
+  	
+}
+
+/* Estilo do "thumb" (a parte que se move) */
+.scroll-containerPE::-webkit-scrollbar-thumb {
+    background-color: #f4bf3a; /* Cor do thumb */
+    border-radius: 10px; /* Bordas arredondadas para o thumb */
+}
+
+#btnTreinar{
+   background-color: #44377d;
+       
+      
+        padding: 2%;
+        margin-top: 5%;
+        padding-left:7% ;
+        padding-right:7% ;
+        font-size: 30px;
+        color: #f4bf3a;
+        font-weight: bold;
+
+}
+#btnTreinar:hover{
+ background-color:#f4bf3a;
+ color:  #44377d;
+}
 
 
 
