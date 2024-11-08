@@ -434,6 +434,10 @@
     
   }
 
+  #musculos_envolvidos{
+    margin-bottom: 2%;
+  }
+
   #contDifE{
     background-color: #f4bf3a;
   width: 20%; /* Diminua a largura */
