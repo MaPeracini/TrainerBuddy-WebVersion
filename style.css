@@ -31,19 +31,36 @@
   
       #itensA{
             background-color: rgba(244,191,58) ;
-           padding: 10px;
-           border: none;
+            border: solid 4px rgba(244,191,58);
+           padding-top: 5px;
+          
           a{
         text-decoration: none;
           color: rgba(65,55,108);
               }
       }
+
+      #itensA:hover{
+        border: solid 4px rgba(244,191,58);
+        background-color: transparent;
+
+        a{
+        color:#f4bf3a;
+      }}
   
       #itensB{
           a{
           color: rgba(244,191,58);
            text-decoration: none;
       }}
+
+      #itensB:hover{
+        background-color: rgba(244,191,58) ;
+        a{
+            color:rgba(65,55,108);
+             text-decoration: none;
+        }
+      }
 
       @media (min-width:0px) and (max-width:768px) {
         #divBuddyL{
@@ -85,6 +102,20 @@
       }
     }
 
+    /* @media (max-width: 768px) {
+        #exContainer {
+            width:90%;
+            margin: 0 auto; 
+        }
+    }
+    
+    @media (max-width: 576px) {
+        #exContainer {
+            width: 90%; 
+        }
+    }
+     */
+
    
 
         .offcanvas{
@@ -117,7 +148,7 @@
       font-weight: bold;
       justify-content: space-around;
       flex-direction: row;
-      position: fixed;
+      /* position: fixed; */
       width: 100%;
       margin-top: 0px;
       z-index: 1;
