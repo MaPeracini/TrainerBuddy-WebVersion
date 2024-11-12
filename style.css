@@ -157,7 +157,80 @@
      
     }
 
-    
+     /* Garantir que cada seção ocupe 100% da altura da tela */
+ .section {
+    height: 100vh;
+    width: 100vw;
+   /* display: flex;*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 2%;
+}
+
+/*.section:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.section:nth-child(even) {
+    background-color: #007bff;
+    color: white;
+}*/
+
+/* Estilo do texto */
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+#secao1{
+   background: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
+   display: flex;
+   flex-direction: column;
+}
+
+#secao2{
+  background: linear-gradient(to bottom, rgb(176,138,42) 45%, rgb(48,40,87));
+  display: flex;
+}
+
+#secao3{
+   background: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
+   display: flex;
+   flex-direction: column;
+}
+
+#secao4{
+  background: linear-gradient(to bottom, rgb(176,138,42) 45%, rgb(48,40,87));
+  display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+
+.boraTreinar{
+   
+      border: solid 4px rgba(244,191,58);
+      padding-top: 2%;
+      padding-bottom: 2%;
+       font-size: 20px;
+         font-weight: bold;
+         margin-top: 5%;
+         a{
+           color: #f4bf3a;
+     text-decoration: none;  color: #f4bf3a;
+     text-decoration: none; 
+     font-size: 35px;
+         }
+
+ }
+
+ .contFaleConosco{
+  width: 90%;
+ }
+
 
     /*Login*/
     .backL {
@@ -318,7 +391,7 @@
         .myContainerE{
             background-color: #44377d;
           padding: 20px;
-          a{
+          a,p{
             font-family: Poppins;
             color:#dfa921;
             text-decoration: none;
@@ -390,13 +463,15 @@
         color: #f4bf3a;
         font-weight: bold;
         
-       
-      
+
     }
 
     .btnSalvarT:hover{
-         background-color: #f4bf3a;
+        background-color: #f4bf3a;
         color: #44377d;
+        a{
+      color: #44377d;
+        }
     }
 
     .contFiltrosT{
@@ -562,7 +637,4 @@
  background-color:#f4bf3a;
  color:  #44377d;
 }
-
-
-
 
