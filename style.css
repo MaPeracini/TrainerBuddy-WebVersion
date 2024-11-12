@@ -606,6 +606,13 @@ p {
 
 }
 
+.centralized-container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
 /* Estilo da barra de rolagem */
 .scroll-containerPE::-webkit-scrollbar {
     height: 8px; /* Define a altura da barra de rolagem horizontal */
