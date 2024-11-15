@@ -645,3 +645,26 @@ p {
  color:  #44377d;
 }
 
+
+/*montagem de treinos*/
+#inputReps, #inputSeries{
+    background-color: #ebce84;
+    border: none;
+    color: #44377d;
+  }
+
+  .myContainerMT{
+    background-color: #312854;
+  padding: 20px;
+  a,p{
+    font-family: Poppins;
+    color:#dfa921;
+    text-decoration: none;
+}
+}
+
+#nomeTreino{
+    background-color:#f4bf3a;
+    color: #312854;
+    border-color: #f4bf3a;
+}
