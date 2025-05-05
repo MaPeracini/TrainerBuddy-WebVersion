@@ -645,6 +645,24 @@ p {
  color:  #44377d;
 }
 
+#btnTreinarIA{
+    background-color: #44377d;
+        
+       
+         padding: 2%;
+         margin-top: 5%;
+         padding-left:7% ;
+         padding-right:7% ;
+         font-size: 30px;
+         color: #f4bf3a;
+         font-weight: bold;
+ 
+ }
+ #btnTreinarIA:hover{
+  background-color:#f4bf3a;
+  color:  #44377d;
+ }
+
 
 /*montagem de treinos*/
 #inputReps, #inputSeries{
