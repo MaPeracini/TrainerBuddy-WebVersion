@@ -687,3 +687,59 @@ p {
     color: #312854;
     border-color: #f4bf3a;
 }
+
+/* pagamento */
+ .backP {
+        background-image: linear-gradient(to bottom, rgb(48,40,87)55%,rgb(176,138,42));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        position: -1;
+        position: fixed;
+    }
+
+    #bodyP {
+       
+        font-family: Poppins;
+        width: 100vw;
+        height: 100vh;
+    }
+
+   
+    #containerFormP{
+        background:rgba(244,191,58,50%);
+        
+        width: 40%; 
+        height: 40%;
+         margin: 4%;
+    
+    border-radius: 8px;
+    color: #fff;
+        color: white;
+       a{
+        color: white;
+       }
+    }
+
+   
+    #btnAssinar{
+        background-color: #44377d;
+        border-radius: 40%;
+        border: none;
+        padding: 2%;
+        padding-left:5% ;
+        padding-right:5% ;
+        font-size: 20px;
+        color: #f4bf3a;
+        font-weight: bold;
+    }
+
+    #cpf, #nomeCartao, #nCartao, #mesExp, #anoExp, #cvv{
+        background-color: #44377d;
+        border-color: #44377d;
+        color: #f4bf3a;
+       
+    }
+
