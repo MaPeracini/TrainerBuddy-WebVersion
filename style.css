@@ -142,6 +142,7 @@
         }
 
      #menuH {
+    background-color: rgb(48,40,87);
       font-size: 20px;
       /* padding-bottom: 10px;*/
       display: flex;
