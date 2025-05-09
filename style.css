@@ -743,3 +743,33 @@ p {
        
     }
 
+ /* treino guiado */
+
+    #btnFimSerie{
+        background-color: #44377d;
+        border-radius: 40%;
+        border: none;
+        padding: 3%;
+        padding-left:7% ;
+        padding-right:7%;
+        font-size: 20px;
+        color: #f4bf3a;
+        font-weight: bold;
+    }
+
+    #btnFimSerie:hover{
+        background-color:  #f4bf3a;
+        border-radius: 40%;
+        border: none;
+        padding: 3%;
+        padding-left:7% ;
+        padding-right:7% ;
+        font-size: 20px;
+        color:#44377d;
+        font-weight: bold;
+    }
+
+    #containerTG{
+
+
+    }
