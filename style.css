@@ -637,13 +637,21 @@ p {
         padding-left:7% ;
         padding-right:7% ;
         font-size: 30px;
+        a{
         color: #f4bf3a;
+        text-decoration: none;
+        }
+        
         font-weight: bold;
 
 }
 #btnTreinar:hover{
  background-color:#f4bf3a;
- color:  #44377d;
+  a{
+        color:  #44377d;
+        text-decoration: none;
+        }
+ 
 }
 
 #btnTreinarIA{
