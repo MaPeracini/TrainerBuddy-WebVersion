@@ -124,6 +124,10 @@
   
      
  /*Home*/
+
+ #menuHsm{
+    background-color: #312854;
+ }
  
  .backH {
             background-image: linear-gradient(to bottom, rgb(48,40,87) 45%,rgb(176,138,42));
@@ -663,13 +667,20 @@ p {
          padding-left:7% ;
          padding-right:7% ;
          font-size: 30px;
-         color: #f4bf3a;
          font-weight: bold;
+           a{
+        color: #f4bf3a;
+        text-decoration: none;
+        }
  
  }
  #btnTreinarIA:hover{
   background-color:#f4bf3a;
-  color:  #44377d;
+    a{
+         color:  #44377d;
+        text-decoration: none;
+        }
+
  }
 
 
