@@ -18,7 +18,7 @@
 </head>
 <body id="bodyT">
 <!--<div><canvas id="canvas" class="img-fluid rounded mx-auto d-block"></canvas></div>-->
-        <div class="container-fluid " style="padding-bottom: 2%;">
+        <div class="container-fluid pb-2">
             <div class="row pb-lg-0 pb-xsm-3  pt-lg-5 pt-xsm-3">
                
     <div class="col-lg-4 col-md-12 rounded-5 col-12 d-none d-lg-block " style="padding-top: 2%; ">
@@ -27,9 +27,9 @@
                            <div class="text-center pb-2">
                                     <div id="introIa">
                                    
-                                    <button  id="btnTIA" class="rounded-pill" onclick="init1()">Iniciar série</button></div>
+                                    <button  id="btnTIAl" class="rounded-pill" onclick="init1()">Iniciar série</button></div>
                                     <div><canvas id="canvasLarge" class="img-fluid rounded mx-auto d-block"></canvas></div>
-                                    <div id="label-container"></div>
+                                    <div id="label-containerLarge"></div>
                                     </div>
                                       <div style="display: flex; justify-content: center; gap: 5px; ">
                                 <p class="fw-bold" id="numero_repeticoes" >10</p>
@@ -70,9 +70,9 @@
                            <div class="text-center">
                                     <div id="introIa">
                                    
-                                    <button  id="btnTIA" onclick="init()" class="rounded-pill">Iniciar série</button></div>
+                                    <button  id="btnTIAs" onclick="init()" class="rounded-pill">Iniciar série</button></div>
                                     <div><canvas id="canvasSmall" class="img-fluid rounded mx-auto d-block"></canvas></div>
-                                    <div id="label-container"></div>
+                                    <div id="label-containerSmall"></div>
                                     </div>
                             <!-- <div style="display: flex; justify-content: center; gap: 5px; ">
                                 <p class="fw-bold" id="numero_series" >2</p>
@@ -96,7 +96,7 @@
 
                           
                            <div class="p-4 myContainerT rounded-5 text-center " style="margin-bottom: 0;">
-                             <video src="vAbs.mp4" class="img-fluid rounded" autoplay muted playsinline loop ></video>
+                             <video src="vTrips.mp4" class="img-fluid rounded" autoplay muted playsinline loop ></video>
 
                             </div>
                                 <div style="display: flex; justify-content: center; gap: 5px; " class="mt-3">
@@ -174,7 +174,7 @@
     let model, webcam, ctx, labelContainer, maxPredictions;
 
     async function init() {
-        document.getElementById("btnTIA").style.display = "none";
+        document.getElementById("btnTIAs").style.display = "none";
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
@@ -198,7 +198,7 @@
         const canvas = document.getElementById("canvasSmall");
         canvas.width = size1; canvas.height = size2;
         ctx = canvas.getContext("2d");
-        labelContainer = document.getElementById("label-container");
+        labelContainer = document.getElementById("label-containerSmall");
         for (let i = 0; i < maxPredictions; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
           
@@ -208,7 +208,7 @@
     }
 
      async function init1() {
-        document.getElementById("btnTIA").style.display = "none";
+        document.getElementById("btnTIAl").style.display = "none";
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
@@ -232,7 +232,7 @@
         const canvas = document.getElementById("canvasLarge");
         canvas.width = size1; canvas.height = size2;
         ctx = canvas.getContext("2d");
-        labelContainer = document.getElementById("label-container");
+        labelContainer = document.getElementById("label-containerLarge");
         for (let i = 0; i < maxPredictions; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
           
@@ -249,20 +249,54 @@
 
     async function predict() {
       
-        // Prediction #1: run input through posenet
-        // estimatePose can take in an image, video or canvas html element
-        const { pose, posenetOutput } = await model.estimatePose(webcam.canvas);
-        // Prediction 2: run input through teachable machine classification model
-        const prediction = await model.predict(posenetOutput);
+       const { pose, posenetOutput } = await model.estimatePose(webcam.canvas);
+    const prediction = await model.predict(posenetOutput);
 
-        // for (let i = 0; i < maxPredictions; i++) {
-        //     const classPrediction =
-        //         prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-        //     labelContainer.childNodes[i].innerHTML = classPrediction;
-        // }
+    labelContainer.innerHTML = ""; // limpa predições anteriores
 
-        // finally draw the poses
-        drawPose(pose);
+    for (let i = 0; i < maxPredictions; i++) {
+        let className = prediction[i].className.trim().toLowerCase();
+        const probability = prediction[i].probability;
+        const percentage = Math.round(probability * 100);
+
+        console.log("Classe detectada:", className); // <<< AJUDA A VER O NOME EXATO
+
+        // ignora qualquer variação da classe "nada"
+        if (className.includes("nada")) continue;
+
+        const progressWrapper = document.createElement("div");
+        progressWrapper.className = "mt-6 text-start";
+
+        const label = document.createElement("div");
+        label.innerText = `${prediction[i].className} (${percentage}%)`;
+        label.className = "fw-bold mb-1";
+
+        const progress = document.createElement("div");
+        progress.className = "progress";
+        progress.style.height = "20px";
+
+        const progressBar = document.createElement("div");
+        progressBar.className = "progress-bar";
+        progressBar.style.width = `${percentage}%`;
+        progressBar.setAttribute("aria-valuenow", percentage);
+        progressBar.setAttribute("aria-valuemin", "0");
+        progressBar.setAttribute("aria-valuemax", "100");
+        progressBar.innerText = `${percentage}%`;
+
+      if (className.includes("certo")) {
+            progressBar.classList.add("bg-success"); 
+        } else {
+            progressBar.classList.add("bg-danger"); 
+        }
+
+        progress.appendChild(progressBar);
+        progressWrapper.appendChild(label);
+        progressWrapper.appendChild(progress);
+
+        labelContainer.appendChild(progressWrapper);
+    }
+
+    drawPose(pose);
     }
 
     function drawPose(pose) {
